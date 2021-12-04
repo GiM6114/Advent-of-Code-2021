@@ -38,14 +38,14 @@ def getRemainers(previousRemainers,leastCommon,defaultValue):
     halfLen = len(previousRemainers)/2
     
     if nbOnes > halfLen:
-        mostCommonValue = '0' if leastCommon else '1'
+        referenceValue = '0' if leastCommon else '1'
     elif nbOnes < halfLen:
-        mostCommonValue = '1' if leastCommon else '0'
+        referenceValue = '1' if leastCommon else '0'
     else:
-        mostCommonValue = defaultValue
+        referenceValue = defaultValue
         
     
-    remainers = list(filter(lambda x : x[i] == mostCommonValue,previousRemainers))
+    remainers = list(filter(lambda x : x[i] == referenceValue,previousRemainers))
     return remainers
 
     
