@@ -40,6 +40,9 @@ def simulateStep(paddedData):
             
     allFlash = True
 
+# =============================================================================
+# PART 1 & PART 2 (lets do everything in one pass !)
+# =============================================================================
 
 nbSteps = 100
 nbFlashes = 0
