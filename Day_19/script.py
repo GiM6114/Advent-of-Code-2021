@@ -180,4 +180,4 @@ for i in range(n):
         if distance > maxDistance:
             maxDistance = distance
             
-print('Highest Manhattan distance :',maxDistance)
+print('Highest Manhattan distance :',maxDistance) # 10,656
